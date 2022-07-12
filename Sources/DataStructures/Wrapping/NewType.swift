@@ -76,7 +76,7 @@ extension NewType where Value: Numeric {
         return Self(value: lhs.value - rhs.value)
     }
 
-    public static func -= (lhs: inout Self, rhs: Self) {
+    public static func minusEqual (lhs: inout Self, rhs: Self) {
         lhs = lhs - rhs
     }
 
